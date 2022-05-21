@@ -54,7 +54,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-staticman_url: https://loc-comment.herokuapp.com/v3/entry/github/chrisequalsdev/chrisequalsdev.github.io/main/comments
+staticman_url: https://loc-comment.herokuapp.com/v2/entry/chrisequalsdev/chrisequalsdev.github.io/main/comments
+
+               
 
 
 
