@@ -2,6 +2,7 @@
   <input name="options[redirect]" type="hidden" value="{{ 'comment-success' | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   
+<<<<<<< HEAD
   <input name="fields[parent_id]" type="hidden" value="{{ include.parent_id }}">
   
   <textarea id="message-{{ include.parent_id }}" class="comment-message" name="fields[message]" placeholder="Comment (markdown accepted)" required></textarea>
@@ -20,3 +21,22 @@
       placeholder: 'Comment (markdown supported)'
   });
 </script>
+=======
+    <textarea
+      class="comment-message"
+      name="fields[message]"
+      placeholder="Comment (markdown accepted)"
+      required
+    ></textarea>
+    <div class="comment-bottom">
+      <input
+        class="comment-name"
+        name="fields[name]"
+        type="text"
+        placeholder="Name"
+        required
+      />
+      <button class="comment-submit" type="submit">SEND</button>
+    </div>
+  </form>
+>>>>>>> origin/main
