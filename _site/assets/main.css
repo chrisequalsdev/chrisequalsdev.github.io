@@ -204,10 +204,22 @@ table td { border: 1px solid #e8e8e8; }
 
 .comment-new { margin-top: 25px; }
 
-.comment-form { display: flex; flex-direction: column; margin-top: 25px; }
+.comment-form { display: flex; flex-direction: column; margin-bottom: 25px; }
 .comment-form .comment-message, .comment-form .comment-name { font-size: 16px; padding: 15px; border: 1px solid #ddd; margin: 0; }
 .comment-form .comment-message { min-height: 150px; resize: none; }
 .comment-form .comment-bottom { display: flex; }
 .comment-form .comment-name { flex: 1; }
 .comment-form .comment-submit { width: 200px; border: 1px solid #ddd; color: royalblue; font-weight: bold; }
 .comment-form .comment-submit:hover { cursor: pointer; }
+.comment-form .CodeMirror, .comment-form .editor-toolbar { border-radius: 0; }
+.comment-form .CodeMirror, .comment-form .CodeMirror-scroll { min-height: 150px; }
+
+.comment-reply { padding: 15px; padding-top: 5px; display: flex; flex-direction: column; }
+.comment-reply .open { font-style: italic; }
+.comment-reply .close { display: none; align-self: flex-end; padding: 5px 10px; border: 1px solid #ddd; }
+.comment-reply .open:hover, .comment-reply .close:hover { cursor: pointer; }
+.comment-reply .comment-form { display: none; }
+.comment-reply .checkbox { display: none; }
+.comment-reply .checkbox:checked ~ .open { display: none; }
+.comment-reply .checkbox:checked ~ .close { display: block; }
+.comment-reply .checkbox:checked ~ .comment-form { display: flex; }
