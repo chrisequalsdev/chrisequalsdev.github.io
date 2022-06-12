@@ -1,12 +1,15 @@
 <form method="POST" action="{{ site.staticman_url }}" class="comment-form">
   <input name="options[redirect]" type="hidden" value="{{ 'comment-success' | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  
   <input name="fields[parent_id]" type="hidden" value="{{ include.parent_id }}">
-  
+
   <textarea id="message-{{ include.parent_id }}" class="comment-message" name="fields[message]" placeholder="Comment (markdown accepted)" required></textarea>
   <div class="comment-bottom">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcjTmUgAAAAAEonIZHWO6LRbLEe1M0QGfcgbqtU">
+    <input type="hidden" name="options[reCaptcha][secret]" value="Nv5+nyFarBGr/23PrAaHBiwF9hH/ADMpjgJJTNLWm8cDz8MzVuYNtkw121qrlbq3aSKn7nbI2S7fN9NKhj0aZBf32xOXEVpOIF1QZw0zsgb+SamfPsOXnJSldM64r6od0vmIzhHZ+ln+vvewjSrUv26qqJ5GtF0xos99/CeXFZM=">
     <input class="comment-name" name="fields[name]" type="text" placeholder="Name" required>
+    <div class="g-recaptcha" data-sitekey="6LcjTmUgAAAAAEonIZHWO6LRbLEe1M0QGfcgbqtU"></div>
+    
     <button class="comment-submit" type="submit">SEND</button>
   </div>  
 </form>
@@ -20,3 +23,4 @@
       placeholder: 'Comment (markdown supported)'
   });
 </script>
+
