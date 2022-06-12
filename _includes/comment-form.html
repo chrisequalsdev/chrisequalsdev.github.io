@@ -2,16 +2,14 @@
   <input name="options[redirect]" type="hidden" value="{{ 'comment-success' | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[parent_id]" type="hidden" value="{{ include.parent_id }}">
-
   <textarea id="message-{{ include.parent_id }}" class="comment-message" name="fields[message]" placeholder="Comment (markdown accepted)" required></textarea>
   <div class="comment-bottom">
-    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcjTmUgAAAAAEonIZHWO6LRbLEe1M0QGfcgbqtU">
-    <input type="hidden" name="options[reCaptcha][secret]" value="Nv5+nyFarBGr/23PrAaHBiwF9hH/ADMpjgJJTNLWm8cDz8MzVuYNtkw121qrlbq3aSKn7nbI2S7fN9NKhj0aZBf32xOXEVpOIF1QZw0zsgb+SamfPsOXnJSldM64r6od0vmIzhHZ+ln+vvewjSrUv26qqJ5GtF0xos99/CeXFZM=">
     <input class="comment-name" name="fields[name]" type="text" placeholder="Name" required>
-    <div class="g-recaptcha" data-sitekey="6LcjTmUgAAAAAEonIZHWO6LRbLEe1M0QGfcgbqtU"></div>
-    
     <button class="comment-submit" type="submit">SEND</button>
-  </div>  
+  </div>
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeWYGUgAAAAALUJMdECJ8b5fME34y7ScztRaNZh">
+  <input type="hidden" name="options[reCaptcha][secret]" value="IifjnrWAe7LMHL25upZh3F+VnYQmdIRKNu03wSCqIM4Ifi/VKqxh0L5MXM6IoqW9w0NLYtIqCUYuz0F9YODJOf5IPelcHSuWJQutdTMt7oiPSlZvHLpr0wH+CLi+WDZaCAd1QaqQT3mn0hPNHk+ETJ3WciMHeAMzN3DyfbAdqtg=">
+  <div class="g-recaptcha" data-sitekey="6LeWYGUgAAAAALUJMdECJ8b5fME34y7ScztRaNZh"></div>
 </form>
 
 <script>
