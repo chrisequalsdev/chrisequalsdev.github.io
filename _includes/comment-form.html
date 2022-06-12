@@ -1,5 +1,6 @@
 <form method="POST" action="{{ site.staticman_url }}" class="comment-form">
   <input name="options[redirect]" type="hidden" value="{{ 'comment-success' | absolute_url }}">
+  <input name="options[redirectError]" type="hidden" value="{{ 'comment-failure' | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[parent_id]" type="hidden" value="{{ include.parent_id }}">
   <textarea id="message-{{ include.parent_id }}" class="comment-message" name="fields[message]" placeholder="Comment (markdown accepted)" required></textarea>
