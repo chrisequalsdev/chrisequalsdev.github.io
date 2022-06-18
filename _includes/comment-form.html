@@ -4,14 +4,14 @@
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[parent_id]" type="hidden" value="{{ include.parent_id }}">
   <textarea id="message-{{ include.parent_id }}" class="comment-message" name="fields[message]" placeholder="Comment (markdown accepted)" required></textarea>
-  <div class="comment-bottom">
-    <input class="comment-name" name="fields[name]" type="text" placeholder="Name" required>
-    <button class="comment-submit" type="submit">SEND</button>
-  </div>
+  <input class="comment-name" name="fields[name]" type="text" placeholder="Name" required>
   <input type="hidden" name="options[reCaptcha][siteKey]" value="6LftkGUgAAAAAG6ZuF644623fe3dtGlSDbNBveuG">
   <input type="hidden" name="options[reCaptcha][secret]" value="KmT7J8w9vbHkK97wrR9YVv+I+sBSUxGW5ab0DbzfoWq3fUDiOXfRJqPK3uwUhIdfxjkFElvunUjKnXuIrZtQuOXR1dylBLSK0FRs4fvGOW9l8swRJ60wL7WPQ8/5bhXXlZb2yGVJV9+U0LvZD6styHxTJJSlWjjW3jlGoZ5r8n0WXcEogV0ZxlsJAsiiuXYz/NOJ3zwLteG+40Ng0d6hCZ7utc0++y+ftHdK1KO/DNXGK2UmzbMIW+3sPq5ewHJFIfbIulpifn0erWr7o9GzGPiZoMcd/7CkU7FmP0qpB/8aQ6XOJUrahzDfL5G+zytlkxbgiPcOGrqFDFzhhlnwzw==">
-  <div class="g-recaptcha" data-sitekey="6LftkGUgAAAAAG6ZuF644623fe3dtGlSDbNBveuG"></div>
-</form>
+  <br>
+  <div class="g-recaptcha" data-sitekey="6LftkGUgAAAAAG6ZuF644623fe3dtGlSDbNBveuG"></div>  
+  <br>
+  <button class="comment-submit" type="submit">SEND</button>
+ </form>
 
 <script>
   var simplemde = new SimpleMDE({ 
