@@ -55,3 +55,6 @@ plugins:
 #   - vendor/ruby/
 
 staticman_url: https://loc-comment.herokuapp.com/v2/entry/chrisequalsdev/chrisequalsdev.github.io/main/comments
+
+# Google Analytics
+google_analytics: G-H0L11Z0ZMH
