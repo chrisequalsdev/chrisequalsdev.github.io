@@ -5,9 +5,6 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
   
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
@@ -20,5 +17,10 @@
   
   <!-- Recaptcha -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!-- Analytics -->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 
 </head>
